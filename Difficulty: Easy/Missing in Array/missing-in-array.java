@@ -25,6 +25,8 @@ class GFG {
 // } Driver Code Ends
 
 
+
+
 // User function Template for Java
 class Solution {
 
@@ -32,9 +34,8 @@ class Solution {
     int missingNumber(int n, int arr[]) {
 
         // Your Code Here
-        int sum=(n*(n+1))/2,s=0;
-        for(int i=0;i<n-1;i++)
-            s+=arr[i];
-        return(sum-s);
+        int s=0,sum=(n+1)*n/2;
+        for(int i:arr) s+=i;
+        return sum-s;
     }
 }
